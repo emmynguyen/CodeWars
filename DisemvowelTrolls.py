@@ -22,3 +22,10 @@ def disemvowel(string):
 
 #Call the function
 disemvowel(string)
+
+#Added test cases
+#test.assert_equals(disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!")
+#test.assert_equals(disemvowel("You suck!"), "Y sck!")
+#test.assert_equals(disemvowel("This is terrible."), "Ths s trrbl.")
+#test.assert_equals(disemvowel("Don't quit your day job."), "Dn't qt yr dy jb.")
+#test.assert_equals(disemvowel("Boo!"), "B!")
