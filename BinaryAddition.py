@@ -13,9 +13,14 @@ b = int(input("Enter a number: "))
 #Create a function
 def add_binary(a,b):
     total_sum = bin(a + b)
-    print("")
-    print("Equivalent Binary Number: ",total_sum[2:])
-    return a, b
+    return total_sum[2:]
 
 #Call the function
 add_binary(a,b)
+
+#Sample Tests
+#Test.assert_equals(add_binary(1,1),"10")
+#Test.assert_equals(add_binary(0,1),"1")
+#Test.assert_equals(add_binary(1,0),"1")
+#Test.assert_equals(add_binary(2,2),"100")
+#Test.assert_equals(add_binary(51,12),"111111")
