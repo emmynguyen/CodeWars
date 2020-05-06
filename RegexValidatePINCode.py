@@ -12,9 +12,10 @@ pin = input("Enter a PIN code: ")
 #Create a function that validates PIN codes
 def validate_pin(pin):
     regex = re.compile('[@_!#$%^&*()<>?/\|}{~:],."')
-    if len(pin) == 4 or len(pin) == 6 and (regex.search(pin) == None) and pin.isnumeric():
-        if pin >= "0000" and pin <= "9999" or pin >= "000000" and pin <= "999999":
-            return True
+    if len(pin) == 4 or len(pin) == 6 and (regex.search(pin) == None):
+        if pin.isnumeric() and pin.isdigit():
+            if pin >= "0000" and pin <= "9999" or pin >= "000000" and pin <= "999999":
+                return True
         else:
             return False
             print("Wrong output for", pin)
