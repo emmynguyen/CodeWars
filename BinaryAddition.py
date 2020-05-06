@@ -12,9 +12,9 @@ b = int(input("Enter a number: "))
 
 #Create a function
 def add_binary(a,b):
-    total_sum = a + b
-    bin_sum = bin(total_sum)
-    print("Equivalent Binary Number: ",bin_sum[2:])
+    total_sum = bin(a + b)
+    print("")
+    print("Equivalent Binary Number: ",total_sum[2:])
     return a, b
 
 #Call the function
